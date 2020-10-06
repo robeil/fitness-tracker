@@ -1,0 +1,31 @@
+{
+  "name": "fitness-tracker",
+  "version": "1.0.0",
+  "description": "fitness-tracker",
+  "main": "server.js",
+  "dependencies": {
+    "eslint": "^7.10.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm run lint",
+    "start": "node server.js",
+    "lint": "eslint **/*.js --quiet",
+    "fix": "eslint --fix .",
+    "watch": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Robeil/fitness-tracker.git"
+  },
+  "author": "Robeil Aregawi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Robeil/fitness-tracker/issues"
+  },
+  "homepage": "https://github.com/Robeil/fitness-tracker#readme"
+}
