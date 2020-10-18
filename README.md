@@ -13,7 +13,9 @@ This is app is created to help to track a user daily workout activities
 
 # User Story
 ```
-As a user, I want to be able to view create and track daily workouts. I want to be able to log multiple exercises in a workout on a given day. I should also be able to track the
+As a user, I want to be able to view create and track daily workouts. 
+I want to be able to log multiple exercises in a workout on a given day. 
+I should also be able to track the
 name, 
 type, 
 weight,
