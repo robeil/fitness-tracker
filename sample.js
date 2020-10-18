@@ -1,6 +1,3 @@
-const router = require("express").Router();
-const Workout = require("../models/tracker.js");
-
 router.post("/api/workouts", ({ body }, res) => {
     Workout.create(body)
     .then(dbWorkout => {
@@ -43,5 +40,3 @@ router.get("/api/workouts/range", (req, res) => {
         res.json(err);
     });
 });
-
-module.exports = router;
