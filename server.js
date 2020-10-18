@@ -9,7 +9,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use(express.static("public"));
-
+// connecting with mangoDB 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/fitness", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
@@ -18,8 +18,8 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/fitness", {
 });
 
 // routes
-// app.use(require("./routes/api"));
-// app.use(require("./routes/views"));
+ app.use(require("./routes/api.js"));
+ app.use(require("./routes/workView.js"));
 
 
 app.listen(PORT, () => {
